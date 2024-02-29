@@ -121,7 +121,7 @@ const About = () => {
 	}, [YOE]);
 
 	return (
-		<div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+		<div className="h-full bg-primary/30 py-32 text-center xl:text-left overflow-hidden">
 			<Circles />
 			{/* avatar img */}
 			<motion.div
@@ -129,11 +129,11 @@ const About = () => {
 				initial="hidden"
 				animate="show"
 				exit="hidden"
-				className="hidden xl:flex absolute bottom-0 -left-[370px]"
+				className="hidden xl:flex absolute -bottom-[32rem] right-[10%] z-10 mix-blend-luminosity w-[43rem]"
 			>
 				<Avatar />
 			</motion.div>
-			<div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+			<div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 relative z-10">
 				{/* text */}
 				<div className="flex-1 flex flex-col justify-center">
 					<motion.h2
