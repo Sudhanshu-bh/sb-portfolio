@@ -19,7 +19,7 @@ const Experience = () => {
 					<div key={itemIndex} className="mb-4 text-white/60">
 						{item.title}
 						<br />
-						{item.stage}
+						<span className="text-white/35">{item.stage}</span>
 					</div>
 				))}
 			</div>
