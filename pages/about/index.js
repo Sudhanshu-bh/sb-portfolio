@@ -8,14 +8,15 @@ import {
 	FaReact,
 	FaWordpress,
 	FaFigma,
+	FaAngular,
+	FaBootstrap,
 } from 'react-icons/fa';
 
-import {
-	SiNextdotjs,
-	SiFramer,
-	SiAdobexd,
-	SiAdobephotoshop,
-} from 'react-icons/si';
+import { SiAdobexd, SiAdobephotoshop, SiJasmine } from 'react-icons/si';
+
+import { BiLogoTypescript } from 'react-icons/bi';
+
+import { TbBrandCypress } from 'react-icons/tb';
 
 //  data
 const aboutData = [
@@ -25,13 +26,15 @@ const aboutData = [
 			{
 				title: 'Web Development',
 				icons: [
+					<FaAngular key="angular" />,
+					<FaReact key="react" />,
+					<FaBootstrap key="bootstrap" />,
 					<FaHtml5 key="html5" />,
 					<FaCss3 key="css3" />,
 					<FaJs key="js" />,
-					<FaReact key="react" />,
-					<SiNextdotjs key="next" />,
-					<SiFramer key="framer" />,
-					<FaWordpress key="wordpress" />,
+					<BiLogoTypescript key="typescript" />,
+					<SiJasmine key="jasmine" />,
+					<TbBrandCypress key="cypress" />,
 				],
 			},
 			{
@@ -45,32 +48,15 @@ const aboutData = [
 		],
 	},
 	{
-		title: 'awards',
-		info: [
-			{
-				title: 'Webby Awards - Honoree',
-				stage: '2011 - 2012',
-			},
-			{
-				title: 'Adobe Design Achievement Awards - Finalist',
-				stage: '2009 - 2010',
-			},
-		],
-	},
-	{
 		title: 'experience',
 		info: [
 			{
-				title: 'UX/UI Designer - XYZ Company',
-				stage: '2012 - 2023',
+				title: 'Software Engineer - Siemens',
+				stage: 'Feb 2022 - April 2024',
 			},
 			{
-				title: 'Web Developer - ABC Agency',
-				stage: '2010 - 2012',
-			},
-			{
-				title: 'Intern - DEF Corporation',
-				stage: '2008 - 2010',
+				title: 'Software trainee - KENT Cam Technologies',
+				stage: 'Aug 2021 - Feb 2022',
 			},
 		],
 	},
@@ -143,8 +129,7 @@ const About = () => {
 						exit="hidden"
 						className="h2"
 					>
-						Captivating <span className="text-accent">stories</span> birth
-						magnificent designs.
+						Crafting <span className="text-accent">digital dreams</span>.
 					</motion.h2>
 					<motion.p
 						variants={fadeIn('right', 0.4)}
@@ -153,9 +138,11 @@ const About = () => {
 						exit="hidden"
 						className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
 					>
-						3 years ago, I began freelancing as a developer. Since then,
-						I&apos;ve done remote work for agencies, counsulted for startups,
-						and collaborated on digital products for business and consumer use.
+						With {yoe} years in coding, I excel as a passionate frontend
+						developer, intrigued by backend complexities. Committed to
+						excellence, I integrate testing strategies, including unit and
+						end-to-end testing, ensuring top-notch quality and efficiency in
+						every project.
 					</motion.p>
 					{/* counters */}
 					<motion.div

@@ -26,8 +26,7 @@ const Home = () => {
 						exit="hidden"
 						className="h1"
 					>
-						Transforming Ideas <br /> Into{' '}
-						<span className="text-accent">Digital Reality</span>
+						Code. Create. <br /> <span className="text-accent">Captivate.</span>
 					</motion.h1>
 					{/* subtitle */}
 					<motion.p
@@ -37,8 +36,8 @@ const Home = () => {
 						exit="hidden"
 						className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
 					>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua ut.
+						Elegance in Every Line, Brilliance in Every Design - Your Digital
+						Experience Elevated.
 					</motion.p>
 					{/* btn */}
 					<div className="flex justify-center xl:hidden relative">
