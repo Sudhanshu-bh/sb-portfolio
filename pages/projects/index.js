@@ -7,7 +7,7 @@ import Circles from '../../components/Circles';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 
-const Work = () => {
+const Projects = () => {
 	return (
 		<div className="h-full bg-primary/30 py-36 flex items-center">
 			<Circles />
@@ -22,7 +22,7 @@ const Work = () => {
 							exit="hidden"
 							className="h2 xl:mt-12"
 						>
-							My work<span className="text-accent">.</span>
+							My personal projects<span className="text-accent">.</span>
 						</motion.h2>
 						<motion.p
 							variants={fadeIn('up', 0.4)}
@@ -54,4 +54,4 @@ const Work = () => {
 	);
 };
 
-export default Work;
+export default Projects;
