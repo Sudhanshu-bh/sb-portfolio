@@ -1,6 +1,3 @@
-// next image
-import Image from 'next/image';
-
 // components
 import ParticlesContainer from '../components/ParticlesContainer';
 import ProjectsBtn from '../components/ProjectsBtn';
@@ -68,7 +65,7 @@ const Home = () => {
 					animate="show"
 					exit="hidden"
 					transition={{ duration: 1, ease: 'easeInOut' }}
-					className="w-full h-full max-w-[35vw] max-h-[678px] absolute -bottom-32 lg:top-[27%] lg:right-[13%] right-2 mix-blend-luminosity"
+					className="w-full h-full max-w-[35vw] max-h-[880px] absolute -bottom-32 lg:top-[27%] lg:right-[13%] right-2 mix-blend-luminosity"
 				>
 					<Avatar />
 				</motion.div>
