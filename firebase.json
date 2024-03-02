@@ -9,7 +9,7 @@
     "rewrites": [
       {
         "source": "/about",
-        "destination": "/about/index.html"
+        "destination": "/pages/about/index.html"
       }
     ]
   }
