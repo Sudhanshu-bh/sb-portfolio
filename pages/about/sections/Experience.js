@@ -1,5 +1,8 @@
 import React from 'react';
 
+// framer motion
+import { motion } from 'framer-motion';
+
 const experience = [
 	{
 		title: 'Software Engineer - Siemens',
@@ -14,7 +17,7 @@ const experience = [
 const Experience = () => {
 	return (
 		<>
-			<div>
+			<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
 				{experience.map((item, itemIndex) => (
 					<div key={itemIndex} className="mb-4 text-white/60">
 						{item.title}
@@ -22,7 +25,7 @@ const Experience = () => {
 						<span className="text-white/35">{item.stage}</span>
 					</div>
 				))}
-			</div>
+			</motion.div>
 		</>
 	);
 };

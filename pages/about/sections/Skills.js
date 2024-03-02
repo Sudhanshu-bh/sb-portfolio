@@ -14,6 +14,9 @@ import { SiJasmine } from 'react-icons/si';
 import { BiLogoTypescript } from 'react-icons/bi';
 import { TbBrandCypress } from 'react-icons/tb';
 
+// framer motion
+import { motion } from 'framer-motion';
+
 const SkillsData = [
 	{ name: 'Angular', icon: FaAngular, key: 'angular' },
 	{ name: 'React.js', icon: FaReact, key: 'reactjs' },
@@ -28,17 +31,22 @@ const SkillsData = [
 
 const Skills = () => {
 	return (
-		<div className="flex flex-wrap">
+		<motion.div
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			className="flex flex-wrap"
+		>
 			{SkillsData.map((item, itemIndex) => (
-				<div
-					className="flex-[50%] flex w-full items-center px-10 xl:px-0 mb-1 text-white/60"
+				<motion.div
+					whileHover={{ scale: 1.06, color: 'white' }}
+					className="flex-[50%] flex w-full items-center px-10 xl:px-0 mb-1 text-white/60 cursor-default"
 					key={itemIndex}
 				>
 					<item.icon />
 					&nbsp; {item.name}
-				</div>
+				</motion.div>
 			))}
-		</div>
+		</motion.div>
 	);
 };
 
