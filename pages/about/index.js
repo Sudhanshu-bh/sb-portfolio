@@ -119,7 +119,7 @@ const About = () => {
 					className="flex flex-col w-full xl:max-w-[48%] h-[480px] mt-4 xl:mt-0"
 				>
 					{/* tabs title */}
-					<div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0">
+					<div className="flex gap-x-10 xl:gap-x-8 mx-auto xl:mx-0">
 						{aboutSections.map((item, itemIndex) => (
 							<div
 								className={`${
@@ -136,9 +136,7 @@ const About = () => {
 					</div>
 
 					{/* tabs content */}
-					<div className="py-2 xl:py-6 flex flex-col gap-y-4 items-center xl:items-start">
-						{aboutSections[index].component}
-					</div>
+					<div className="py-2 xl:py-6">{aboutSections[index].component}</div>
 				</motion.div>
 			</div>
 		</div>

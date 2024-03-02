@@ -31,7 +31,7 @@ const Skills = () => {
 		<div className="flex flex-wrap">
 			{SkillsData.map((item, itemIndex) => (
 				<div
-					className="flex-[50%] flex w-full items-center mb-1 text-white/60"
+					className="flex-[50%] flex w-full items-center px-10 xl:px-0 mb-1 text-white/60"
 					key={itemIndex}
 				>
 					<item.icon />

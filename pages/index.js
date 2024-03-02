@@ -39,7 +39,7 @@ const Home = () => {
 						Elegance in Every Line, Brilliance in Every Design - Your Digital
 						Experience Elevated.
 					</motion.p>
-					{/* btn */}
+					{/* my projects button */}
 					<div className="flex justify-center xl:hidden relative">
 						<ProjectsBtn />
 					</div>
@@ -48,10 +48,11 @@ const Home = () => {
 						initial="hidden"
 						animate="show"
 						exit="hidden"
-						className="hidden xl:flex"
+						className="hidden xl:flex mb-12"
 					>
 						<ProjectsBtn />
 					</motion.div>
+					<div className="min-h-24 hidden"></div>
 				</div>
 			</div>
 			{/* image */}
