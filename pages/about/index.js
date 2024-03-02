@@ -1,87 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
-// icons
-import {
-	FaHtml5,
-	FaCss3,
-	FaJs,
-	FaReact,
-	FaWordpress,
-	FaFigma,
-	FaAngular,
-	FaBootstrap,
-} from 'react-icons/fa';
-
-import { SiAdobexd, SiAdobephotoshop, SiJasmine } from 'react-icons/si';
-
-import { BiLogoTypescript } from 'react-icons/bi';
-
-import { TbBrandCypress } from 'react-icons/tb';
-
-//  data
-const aboutData = [
-	{
-		title: 'skills',
-		info: [
-			{
-				title: 'Web Development',
-				icons: [
-					<FaAngular key="angular" />,
-					<FaReact key="react" />,
-					<FaBootstrap key="bootstrap" />,
-					<FaHtml5 key="html5" />,
-					<FaCss3 key="css3" />,
-					<FaJs key="js" />,
-					<BiLogoTypescript key="typescript" />,
-					<SiJasmine key="jasmine" />,
-					<TbBrandCypress key="cypress" />,
-				],
-			},
-			{
-				title: 'UI/UX Design',
-				icons: [
-					<FaFigma key="figma" />,
-					<SiAdobexd key="adobeXd" />,
-					<SiAdobephotoshop key="adobePhotoshop" />,
-				],
-			},
-		],
-	},
-	{
-		title: 'experience',
-		info: [
-			{
-				title: 'Software Engineer - Siemens',
-				stage: 'Feb 2022 - April 2024',
-			},
-			{
-				title: 'Software trainee - KENT Cam Technologies',
-				stage: 'Aug 2021 - Feb 2022',
-			},
-		],
-	},
-	{
-		title: 'credentials',
-		info: [
-			{
-				title: 'Web Development - ABC University, LA, CA',
-				stage: '2011',
-			},
-			{
-				title: 'Computer Science Diploma - AV Technical Institute',
-				stage: '2009',
-			},
-			{
-				title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-				stage: '2006',
-			},
-		],
-	},
-];
-
 // components
 import Avatar from '../../components/Avatar';
 import Circles from '../../components/Circles';
+import Skills from './sections/Skills';
+import Experience from './sections/Experience';
 
 // framer motion
 import { motion } from 'framer-motion';
@@ -90,6 +13,18 @@ import { fadeIn } from '../../variants';
 // counter
 import CountUp from 'react-countup';
 import moment from 'moment';
+
+// about sections
+const aboutSections = [
+	{
+		title: 'skills',
+		component: <Skills />,
+	},
+	{
+		title: 'experience',
+		component: <Experience />,
+	},
+];
 
 const NoOfProjects = 3;
 
@@ -115,7 +50,7 @@ const About = () => {
 				initial="hidden"
 				animate="show"
 				exit="hidden"
-				className="hidden xl:flex absolute -bottom-[32rem] right-[10%] z-10 mix-blend-luminosity w-[43rem]"
+				className="hidden xl:flex absolute top-[52%] right-[10%] z-10 mix-blend-luminosity w-[37vw]"
 			>
 				<Avatar />
 			</motion.div>
@@ -174,7 +109,8 @@ const About = () => {
 						</div>
 					</motion.div>
 				</div>
-				{/* info (skills, awards, experience, credentials) */}
+
+				{/* info tabs (skills, experience) */}
 				<motion.div
 					variants={fadeIn('left', 0.4)}
 					initial="hidden"
@@ -182,13 +118,15 @@ const About = () => {
 					exit="hidden"
 					className="flex flex-col w-full xl:max-w-[48%] h-[480px] mt-4 xl:mt-0"
 				>
-					<div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
-						{aboutData.map((item, itemIndex) => (
+					{/* tabs title */}
+					<div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0">
+						{aboutSections.map((item, itemIndex) => (
 							<div
 								className={`${
 									index === itemIndex &&
-									'text-accent after:w-full after:bg-accent after:transition-all after:duration-300'
-								} hover:text-accent cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white hover:after:bg-accent after:absolute after:bottom-0 after:left-0 transition-all`}
+									'text-accent after:!w-full after:!bg-accent after:transition-all after:duration-300'
+								} hover:text-accent cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white
+								 hover:after:bg-accent after:absolute after:bottom-0 after:left-0 transition-all`}
 								onClick={() => setIndex(itemIndex)}
 								key={itemIndex}
 							>
@@ -196,26 +134,10 @@ const About = () => {
 							</div>
 						))}
 					</div>
+
+					{/* tabs content */}
 					<div className="py-2 xl:py-6 flex flex-col gap-y-4 items-center xl:items-start">
-						{aboutData[index].info.map((item, itemIndex) => (
-							<div
-								className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
-								key={itemIndex}
-							>
-								{/* title */}
-								<div className="font-light mb-2 md:mb-0">{item.title}</div>
-								<div className="hidden md:flex">-</div>
-								<div>{item.stage}</div>
-								<div className="flex gap-x-4">
-									{/* icons */}
-									{item.icons?.map((icon, itemIndex) => (
-										<div className="text-2xl text-white" key={itemIndex}>
-											{icon}
-										</div>
-									))}
-								</div>
-							</div>
-						))}
+						{aboutSections[index].component}
 					</div>
 				</motion.div>
 			</div>

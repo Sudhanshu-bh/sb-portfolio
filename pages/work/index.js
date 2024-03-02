@@ -31,8 +31,10 @@ const Work = () => {
 							exit="hidden"
 							className="mb-4 max-w-[400px] mx-auto lg:mx-0"
 						>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua ut.
+							I have developed diverse projects utilizing Angular, React.js,
+							Next.js, Tailwind CSS, Bootstrap, and more. Additionally, I have
+							deployed them across various platforms such as Firebase, Netlify,
+							and Vercel.
 						</motion.p>
 					</div>
 					{/* slider */}
