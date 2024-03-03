@@ -23,7 +23,6 @@ function MyApp({ Component, pageProps }) {
 					name="description"
 					content="Frontend developer proficient in Angular, ReactJS and much more."
 				/>
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
 			</Head>
 			<Layout>
 				<AnimatePresence mode="wait">
