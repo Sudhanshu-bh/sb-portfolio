@@ -19,7 +19,10 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<Head>
 				<title>Sudhanshu Bhardwaj</title>
-				<meta property="desciption" content="Sudhanshu's portfolio" />
+				<meta
+					name="description"
+					content="Frontend developer proficient in Angular, ReactJS and much more."
+				/>
 			</Head>
 			<Layout>
 				<AnimatePresence mode="wait">
