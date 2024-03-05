@@ -37,42 +37,6 @@ const workSlides = {
 				},
 			],
 		},
-		{
-			projects: [
-				{
-					title: 'title',
-					path: '/thumb4.jpg',
-					link: {
-						github: '',
-						live: '',
-					},
-				},
-				{
-					title: 'title',
-					path: '/thumb1.jpg',
-					link: {
-						github: '',
-						live: '',
-					},
-				},
-				{
-					title: 'title',
-					path: '/thumb2.jpg',
-					link: {
-						github: '',
-						live: '',
-					},
-				},
-				{
-					title: 'title',
-					path: '/thumb3.jpg',
-					link: {
-						github: '',
-						live: '',
-					},
-				},
-			],
-		},
 	],
 };
 
