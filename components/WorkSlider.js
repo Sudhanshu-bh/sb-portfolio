@@ -5,7 +5,7 @@ const workSlides = {
 			projects: [
 				{
 					title: 'Amazon clone - an e-commerce website',
-					path: '/thumb1.jpg',
+					path: '/m-thumb1.jpg',
 					link: {
 						github: 'https://github.com/Sudhanshu-bh/fs-amazon-clone',
 						live: '',

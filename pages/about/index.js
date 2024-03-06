@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
 // components
-import Avatar from '../../components/Avatar';
 import Circles from '../../components/Circles';
 import Skills from './sections/Skills';
 import Experience from './sections/Experience';
@@ -42,19 +41,11 @@ const About = () => {
 	}, [YOE]);
 
 	return (
-		<div className="h-full bg-primary/30 py-32 text-center xl:text-left overflow-hidden">
+		<div className="h-full pt-24 pb-16 sm:pb-24 text-center xl:text-left">
 			<Circles />
-			{/* avatar img */}
-			<motion.div
-				variants={fadeIn('right', 0.2)}
-				initial="hidden"
-				animate="show"
-				exit="hidden"
-				className="hidden xl:flex absolute top-[52%] right-[10%] z-10 mix-blend-luminosity w-[37vw]"
-			>
-				<Avatar />
-			</motion.div>
-			<div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 relative z-10">
+
+			{/* content */}
+			<div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 relative z-20 pb-8 sm:pb-0 overflow-y-auto sm:overflow-hidden">
 				{/* text */}
 				<div className="flex-1 flex flex-col justify-center">
 					<motion.h2
@@ -64,8 +55,10 @@ const About = () => {
 						exit="hidden"
 						className="h2"
 					>
-						Crafting <span className="text-accent">digital dreams</span>.
+						Crafting <br />
+						<span className="text-accent">digital dreams</span>.
 					</motion.h2>
+
 					<motion.p
 						variants={fadeIn('right', 0.4)}
 						initial="hidden"
@@ -79,6 +72,7 @@ const About = () => {
 						end-to-end testing, ensuring top-notch quality and efficiency in
 						every project.
 					</motion.p>
+
 					{/* counters */}
 					<motion.div
 						variants={fadeIn('right', 0.6)}
@@ -97,6 +91,7 @@ const About = () => {
 									Years of experience
 								</div>
 							</div>
+
 							{/* projects */}
 							<div className="relative flex-1 xl:after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
 								<div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
@@ -116,7 +111,7 @@ const About = () => {
 					initial="hidden"
 					animate="show"
 					exit="hidden"
-					className="flex flex-col w-full xl:max-w-[48%] h-[480px] mt-4 xl:mt-0"
+					className="flex flex-col w-full xl:max-w-[48%] h-[26.25rem] mt-4 xl:mt-0"
 				>
 					{/* tabs title */}
 					<div className="flex gap-x-10 xl:gap-x-8 mx-auto xl:mx-0">
