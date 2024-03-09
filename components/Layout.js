@@ -20,8 +20,10 @@ const Layout = ({ children }) => {
 		>
 			<TopLeftImg />
 			<Nav />
-			<Header />
-			{children}
+			<div className="h-full w-full xl:px-20 bg-primary/60 bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
+				<Header />
+				{children}
+			</div>
 		</div>
 	);
 };

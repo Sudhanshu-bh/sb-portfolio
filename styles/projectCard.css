@@ -1,0 +1,21 @@
+/* Common style */
+.my-grid figure figcaption {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.my-grid figure figcaption::before,
+.my-grid figure figcaption::after {
+	pointer-events: none;
+}
+
+@media screen and (max-width: 599px) {
+	figure .project__mobileLinks a {
+		padding: 0.7rem;
+		width: 50%;
+	}
+
+	figure .project__mobileLinks a:not(:last-of-type) {
+		border-right: 2px solid rgb(55 65 81);
+	}
+}

@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Circles from '../../components/Circles';
 import Skills from './sections/Skills';
 import Experience from './sections/Experience';
+import Bulb from '../../components/Bulb';
 
 // framer motion
 import { motion } from 'framer-motion';
@@ -134,6 +135,8 @@ const About = () => {
 					<div className="py-2 xl:py-6">{aboutSections[index].component}</div>
 				</motion.div>
 			</div>
+
+			<Bulb />
 		</div>
 	);
 };

@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import '../styles/projectCard.css';
 
 // next head
 import Head from 'next/head';

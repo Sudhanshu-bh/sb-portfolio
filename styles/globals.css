@@ -25,6 +25,15 @@
 	.page {
 		@apply w-full h-screen;
 	}
+	.text-shadow {
+		text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
+	}
+	.captionLinks a {
+		@apply text-red-500;
+	}
+	.captionLinks a:hover {
+		@apply underline;
+	}
 	.h1 {
 		@apply text-[2.18rem] leading-tight md:text-[3.37rem] md:leading-[1.3] mb-4 font-semibold;
 	}
