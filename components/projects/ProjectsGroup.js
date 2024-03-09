@@ -9,7 +9,7 @@ const workSlides = {
 					path: '/m-thumb1.jpg',
 					link: {
 						github: 'https://github.com/Sudhanshu-bh/fs-amazon-clone',
-						live: '',
+						live: 'https://fs--clone.web.app/',
 					},
 				},
 				{

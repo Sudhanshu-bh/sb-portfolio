@@ -2,12 +2,6 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const ProjectCard = ({ path, title, desc, link }) => {
-	const [innerWid, setInnerWid] = useState();
-
-	useEffect(() => {
-		setInnerWid(window.innerWidth);
-	}, [setInnerWid]);
-
 	return (
 		<>
 			<figure class="effect-ruby cursor-default relative group">
@@ -26,35 +20,37 @@ const ProjectCard = ({ path, title, desc, link }) => {
 					</h2>
 					<p className="text-[0.98rem] md:text-sm md:font-semibold capitalize md:p-[1.4rem] md:border md:border-gray-400 md:opacity-0 md:translate-y-5 md:scale-110 duration-300 group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100">
 						{desc}
-						{link.live && innerWid >= 600 && (
-							<>
-								{' '}
-								|{' '}
-								<a href={link.live} target="_blank" rel="noreferrer">
-									View
-								</a>
-							</>
-						)}
-						{link.github && innerWid > 599 && (
-							<>
-								{' '}
-								|{' '}
-								<a href={link.github} target="_blank" rel="noreferrer">
-									Github
-								</a>
-							</>
-						)}
+						<span className="hidden md:inline">
+							{link.github && (
+								<>
+									{' '}
+									|{' '}
+									<a href={link.github} target="_blank">
+										Github
+									</a>
+								</>
+							)}
+							{link.live && (
+								<>
+									{' '}
+									|{' '}
+									<a href={link.live} target="_blank">
+										View
+									</a>
+								</>
+							)}
+						</span>
 					</p>
 				</figcaption>
-				<div className="project__mobileLinks flex md:hidden bg-slate-800 text-gray-300">
-					{link.live && (
-						<a href={link.live} target="_blank" rel="noreferrer">
-							View
+				<div className="projectMobileLinks flex md:hidden bg-slate-800 text-gray-300">
+					{link.github && (
+						<a href={link.github} target="_blank">
+							Github
 						</a>
 					)}
-					{link.github && (
-						<a href={link.github} target="_blank" rel="noreferrer">
-							Github
+					{link.live && (
+						<a href={link.live} target="_blank">
+							View
 						</a>
 					)}
 				</div>

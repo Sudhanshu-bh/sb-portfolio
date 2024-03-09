@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Common style */
 .my-grid figure figcaption {
 	-webkit-backface-visibility: hidden;
@@ -9,13 +13,10 @@
 	pointer-events: none;
 }
 
-@media screen and (max-width: 599px) {
-	figure .project__mobileLinks a {
-		padding: 0.7rem;
-		width: 50%;
-	}
+.projectMobileLinks a {
+	@apply p-[0.68rem] w-1/2;
+}
 
-	figure .project__mobileLinks a:not(:last-of-type) {
-		border-right: 2px solid rgb(55 65 81);
-	}
+.projectMobileLinks a:not(:last-of-type) {
+	@apply border-r-2 border-gray-700;
 }

@@ -22,7 +22,7 @@ const Projects = () => {
 							initial="hidden"
 							animate="show"
 							exit="hidden"
-							className="h2 xl:mt-12"
+							className="h2 mt-12"
 						>
 							My personal <span className="text-accent">projects.</span>
 						</motion.h2>
@@ -32,7 +32,7 @@ const Projects = () => {
 							initial="hidden"
 							animate="show"
 							exit="hidden"
-							className="mb-4 max-w-[400px] mx-auto lg:mx-0"
+							className="mt-6 mb-12 max-w-[400px] mx-auto lg:mx-0"
 						>
 							I have developed diverse personal projects utilizing Angular,
 							React.js, Next.js, Tailwind CSS, Bootstrap, and more.
