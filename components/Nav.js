@@ -6,6 +6,7 @@ export const navData = [
 	{ name: 'home', path: '/', icon: <HiHome /> },
 	{ name: 'about', path: '/about', icon: <HiUser /> },
 	{ name: 'projects', path: '/projects', icon: <HiViewColumns /> },
+	{ name: 'contact', path: '/contact', icon: <HiEnvelope /> }, // not to be shown on md or large screens
 ];
 
 import Link from 'next/link';
@@ -20,10 +21,13 @@ const Nav = () => {
 			<div className="flex w-full xl:flex-col items-center justify-evenly xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[65px] xl:h-max py-8 bg-white/10 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full">
 				{navData.map((link, index) => {
 					return (
+						// hide Contact page on md or larger screens
 						<Link
 							className={`${
 								link.path === pathname && 'text-accent'
-							} relative flex items-center group hover:text-accent transition-all duration-300`}
+							} relative flex items-center group hover:text-accent transition-all duration-300 ${
+								link.name === 'contact' && 'md:hidden'
+							}`}
 							href={link.path}
 							key={index}
 						>
