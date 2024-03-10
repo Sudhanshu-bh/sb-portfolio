@@ -63,27 +63,19 @@ import { Pagination } from 'swiper';
 const ProjectsGroup = () => {
 	return (
 		<>
-			{/* swiper for md and bigger screens */}
 			<div className="hidden md:flex">
-				<Swiper
-					spaceBetween={10}
-					pagination={{
-						clickable: true,
-					}}
-					modules={[Pagination]}
-				>
-					{workSlides.slides.map((slide, slideIndex) => (
-						<SwiperSlide key={slideIndex} className="translate-z-0">
-							<div className="my-grid grid grid-cols-2 md:grid-rows-2 text-center gap-4">
-								{slide.projects.map((project, projectIndex) => (
-									<div key={projectIndex}>
-										<ProjectCard {...project} />
-									</div>
-								))}
+				{workSlides.slides.map((slide, slideIndex) => (
+					<div
+						className="my-grid grid grid-cols-2 md:grid-rows-2 text-center gap-4"
+						key={slideIndex}
+					>
+						{slide.projects.map((project, projectIndex) => (
+							<div key={projectIndex}>
+								<ProjectCard {...project} />
 							</div>
-						</SwiperSlide>
-					))}
-				</Swiper>
+						))}
+					</div>
+				))}
 			</div>
 
 			{/* simple scroll behaviour for xs and sm screens */}
