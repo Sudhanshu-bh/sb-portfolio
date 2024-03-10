@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
 			className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative overflow-hidden`}
 		>
 			<TopLeftImg />
-			<Nav />
+			{/* <Nav /> */}
 			<div className="h-full w-full xl:px-20 bg-primary/60 bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
 				<Header />
 				{children}
