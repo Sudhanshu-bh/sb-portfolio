@@ -18,6 +18,10 @@
 	color: #f13024;
 }
 
+.swiper-slide {
+	transform: translate3d(0, 0, 0);
+}
+
 @layer base {
 	body {
 		@apply bg-secondary leading-relaxed;

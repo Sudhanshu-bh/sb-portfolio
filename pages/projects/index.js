@@ -40,9 +40,15 @@ const Projects = () => {
 					</div>
 
 					{/* slider */}
-					<div className="w-full xl:max-w-[65%] ">
+					<motion.div
+						variants={fadeIn('down', 0.3)}
+						initial="hidden"
+						animate="show"
+						exit="hidden"
+						className="w-full xl:max-w-[65%] "
+					>
 						<ProjectsGroup />
-					</div>
+					</motion.div>
 				</div>
 			</div>
 			<Bulb />

@@ -74,7 +74,7 @@ const ProjectsGroup = () => {
 				>
 					{workSlides.slides.map((slide, slideIndex) => (
 						<SwiperSlide key={slideIndex}>
-							<div className="my-grid grid grid-cols-2 md:grid-rows-2 text-center gap-4">
+							<div className="my-grid grid grid-cols-2 md:grid-rows-2 text-center gap-4 translate-z-0">
 								{slide.projects.map((project, projectIndex) => (
 									<div key={projectIndex}>
 										<ProjectCard {...project} />
