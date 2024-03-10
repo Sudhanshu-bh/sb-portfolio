@@ -44,7 +44,6 @@ const Projects = () => {
 						variants={fadeIn('down', 0.3)}
 						initial="hidden"
 						animate="show"
-						exit="hidden"
 						className="w-full xl:max-w-[65%] "
 					>
 						<ProjectsGroup />
