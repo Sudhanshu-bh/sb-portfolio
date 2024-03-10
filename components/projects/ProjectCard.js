@@ -4,7 +4,7 @@ import Image from 'next/image';
 const ProjectCard = ({ path, title, desc, link }) => {
 	return (
 		<>
-			<figure class="effect-ruby cursor-default relative group">
+			<figure className="effect-ruby cursor-default relative group">
 				<div>
 					<Image
 						src={path}
