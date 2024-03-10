@@ -9,7 +9,7 @@ import { fadeIn } from '../../variants';
 
 const Projects = () => {
 	return (
-		<div className="h-full pt-24 pb-16 sm:pb-24 flex flex-col xl:flex-row items-center">
+		<div className="flex-1 px-3 sm:px-8 md:px-16 pt-24 pb-16 sm:pb-24 flex flex-col xl:flex-row items-center">
 			<Circles />
 
 			{/* content */}
@@ -41,7 +41,7 @@ const Projects = () => {
 
 					{/* slider */}
 					<motion.div
-						variants={fadeIn('down', 0.6)}
+						variants={fadeIn('down', 0.3)}
 						initial="hidden"
 						animate="show"
 						exit="hidden"

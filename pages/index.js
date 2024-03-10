@@ -11,9 +11,9 @@ import { fadeIn } from '../variants';
 
 const Home = () => {
 	return (
-		<div className="h-full" id="homepage">
+		<div className="flex-1 flex flex-col" id="homepage">
 			{/* text */}
-			<div className="relative z-20 text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
+			<div className="flex-1 relative z-20 text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
 				{/* title */}
 				<motion.h1
 					variants={fadeIn('down', 0.2)}
@@ -54,7 +54,7 @@ const Home = () => {
 			</div>
 
 			{/* image */}
-			<div className="w-[1200px] h-full absolute right-0 bottom-0">
+			<div className="w-[1200px] h-full absolute right-0 bottom-0 overflow-hidden">
 				{/* bg img */}
 				<div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
 
@@ -68,7 +68,7 @@ const Home = () => {
 					animate="show"
 					exit="hidden"
 					transition={{ duration: 1, ease: 'easeInOut' }}
-					className="w-full h-full max-w-[35vw] max-h-[880px] absolute -bottom-32 lg:top-[27%] lg:right-[13%] right-2"
+					className="w-full max-w-[35vw] max-h-[880px] absolute bottom-0 lg:right-[13%] right-2"
 				>
 					<Avatar />
 				</motion.div>

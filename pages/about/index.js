@@ -42,11 +42,11 @@ const About = () => {
 	}, [YOE]);
 
 	return (
-		<div className="h-full pt-24 pb-16 sm:pb-24 text-center xl:text-left">
+		<div className="flex-1 flex flex-col justify-center h-full pt-24 pb-16 sm:pb-24 text-center xl:text-left">
 			<Circles />
 
 			{/* content */}
-			<div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 relative z-20 pb-8 sm:pb-0 overflow-y-auto sm:overflow-hidden">
+			<div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 relative z-20 pb-8 sm:pb-0">
 				{/* text */}
 				<div className="flex-1 flex flex-col justify-center">
 					<motion.h2
@@ -112,7 +112,7 @@ const About = () => {
 					initial="hidden"
 					animate="show"
 					exit="hidden"
-					className="flex flex-col w-full xl:max-w-[48%] h-[26.25rem] mt-4 xl:mt-0"
+					className="flex flex-col w-full xl:max-w-[48%] xl:h-[26.25rem] mt-4 xl:mt-0"
 				>
 					{/* tabs title */}
 					<div className="flex gap-x-10 xl:gap-x-8 mx-auto xl:mx-0">
