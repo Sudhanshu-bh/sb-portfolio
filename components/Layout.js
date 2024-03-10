@@ -18,7 +18,6 @@ const Layout = ({ children }) => {
 		<div
 			className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}
 		>
-			<TopLeftImg />
 			<Nav />
 			<div className="min-h-screen h-full w-full xl:px-20 bg-primary/60 bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
 				<Header />

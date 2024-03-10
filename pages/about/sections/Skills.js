@@ -34,7 +34,7 @@ const Skills = () => {
 		<motion.div
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
-			className="flex flex-wrap"
+			className="flex flex-wrap max-w-sm xl:max-w-none mx-auto"
 		>
 			{SkillsData.map((item, itemIndex) => (
 				<motion.div

@@ -63,7 +63,7 @@ const index = () => {
 				{/* 'developed by' text */}
 				<motion.p variants={reveal(0.8)} initial="hidden" animate="show">
 					Developed by{' '}
-					<span className="underline font-semibold">Sudhanshu Bhardwaj</span>
+					<span className="underline font-semibold">Sudhanshu Bhardwaj</span>.
 				</motion.p>
 			</div>
 		</div>

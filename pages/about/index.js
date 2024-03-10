@@ -132,7 +132,7 @@ const About = () => {
 					</div>
 
 					{/* tabs content */}
-					<div className="py-2 xl:py-6">{aboutSections[index].component}</div>
+					<div className="py-4 xl:py-6">{aboutSections[index].component}</div>
 				</motion.div>
 			</div>
 
