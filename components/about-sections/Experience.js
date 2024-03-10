@@ -7,10 +7,12 @@ const experience = [
 	{
 		title: 'Software Engineer - Siemens',
 		stage: 'Feb 2022 - Present',
+		projects: 'Sinec AMS, Sinec NMS',
 	},
 	{
-		title: 'Software trainee - KENT Cam Technologies',
+		title: 'Software Trainee - KENT Cam Technologies',
 		stage: 'Aug 2021 - Feb 2022',
+		projects: 'KENT CamAttendance',
 	},
 ];
 
@@ -20,9 +22,10 @@ const Experience = () => {
 			<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
 				{experience.map((item, itemIndex) => (
 					<div key={itemIndex} className="mb-4 text-white/60">
-						{item.title}
-						<br />
-						<span className="text-white/35">{item.stage}</span>
+						<span className="font-bold text-white/70">{item.title}</span>
+						<div className="text-white/35">{item.stage}</div>
+						<span className="font-semibold">Projects:</span>{' '}
+						<span className="text-white/55">{item.projects}</span>
 					</div>
 				))}
 			</motion.div>

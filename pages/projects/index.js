@@ -24,7 +24,7 @@ const Projects = () => {
 							exit="hidden"
 							className="h2 mt-7 md:mt-12"
 						>
-							My personal <span className="text-accent">projects.</span>
+							My <span className="text-accent">projects.</span>
 						</motion.h2>
 
 						<motion.p

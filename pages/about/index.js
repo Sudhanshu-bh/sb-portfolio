@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 
 // components
 import Circles from '../../components/Circles';
-import Skills from './sections/Skills';
-import Experience from './sections/Experience';
+import Skills from '../../components/about-sections/Skills';
+import Experience from '../../components/about-sections/Experience';
 import Bulb from '../../components/Bulb';
 
 // framer motion
