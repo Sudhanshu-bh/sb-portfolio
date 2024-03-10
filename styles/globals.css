@@ -45,4 +45,8 @@
 	.textarea {
 		@apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
 	}
+
+	.projectsGrid {
+		@apply grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-8 md:gap-4;
+	}
 }

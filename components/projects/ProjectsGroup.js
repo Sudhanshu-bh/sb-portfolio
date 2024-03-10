@@ -49,50 +49,18 @@ import React from 'react';
 // components
 import ProjectCard from './ProjectCard';
 
-// swiper react component
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// import swiper styles
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/pagination';
-
-// modules
-import { Pagination } from 'swiper';
-
 const ProjectsGroup = () => {
 	return (
 		<>
-			<div className="hidden md:flex">
-				{workSlides.slides.map((slide, slideIndex) => (
-					<div
-						className="my-grid grid grid-cols-2 md:grid-rows-2 text-center gap-4"
-						key={slideIndex}
-					>
-						{slide.projects.map((project, projectIndex) => (
-							<div key={projectIndex}>
-								<ProjectCard {...project} />
-							</div>
-						))}
-					</div>
-				))}
-			</div>
-
-			{/* simple scroll behaviour for xs and sm screens */}
-			<div className="md:hidden">
-				{workSlides.slides.map((slide, slideIndex) => (
-					<div
-						className="my-grid flex flex-col w-full text-center gap-8"
-						key={slideIndex}
-					>
-						{slide.projects.map((project, projectIndex) => (
-							<div key={projectIndex}>
-								<ProjectCard {...project} />
-							</div>
-						))}
-					</div>
-				))}
-			</div>
+			{workSlides.slides.map((slide, slideIndex) => (
+				<div className="my-grid text-center projectsGrid" key={slideIndex}>
+					{slide.projects.map((project, projectIndex) => (
+						<div key={projectIndex}>
+							<ProjectCard {...project} />
+						</div>
+					))}
+				</div>
+			))}
 		</>
 	);
 };
