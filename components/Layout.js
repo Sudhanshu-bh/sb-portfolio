@@ -16,7 +16,7 @@ import TopLeftImg from '../components/TopLeftImg';
 const Layout = ({ children }) => {
 	return (
 		<div
-			className={`page bg-site text-white bg-cover bg-no-repeat min-h-[620px] ${sora.variable} font-sora relative overflow-hidden`}
+			className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative overflow-hidden`}
 		>
 			<TopLeftImg />
 			<Nav />
