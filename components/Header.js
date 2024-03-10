@@ -11,27 +11,41 @@ import Resume from '../components/Resume';
 
 const Header = () => {
 	return (
-		<header className="fixed z-50 w-full flex items-center px-16 xl:px-20 xl:h-[90px] mx-auto md:mx-20 md:-left-20">
-			<div className="container mx-auto">
-				<div className="flex flex-col md:flex-row justify-between items-center gap-y-6 py-8">
-					{/* logo */}
-					<Link href={'/'} className="lg:hidden">
-						<Image src={Logo} width={280} height={38} alt="" priority={true} />
-					</Link>
-					<Link href={'/'} className="hidden lg:flex">
-						<Image src={Logo} width={350} height={48} alt="" priority={true} />
-					</Link>
+		<>
+			<header className="fixed z-50 w-full flex items-center px-16 xl:px-20 xl:h-[90px] mx-auto md:mx-20 md:-left-20 bg-blue-400/40">
+				<div className="container mx-auto">
+					<div className="flex flex-col md:flex-row justify-between items-center gap-y-6 py-8">
+						{/* logo */}
+						<Link href={'/'} className="lg:hidden">
+							<Image
+								src={Logo}
+								width={280}
+								height={38}
+								alt=""
+								priority={true}
+							/>
+						</Link>
+						<Link href={'/'} className="hidden lg:flex">
+							<Image
+								src={Logo}
+								width={350}
+								height={48}
+								alt=""
+								priority={true}
+							/>
+						</Link>
 
-					<div className="hidden md:flex gap-8 ml-8">
-						{/* Resume */}
-						<Resume />
+						<div className="hidden md:flex gap-8 ml-8">
+							{/* Resume */}
+							<Resume />
 
-						{/* socials */}
-						<Socials />
+							{/* socials */}
+							<Socials />
+						</div>
 					</div>
 				</div>
-			</div>
-		</header>
+			</header>
+		</>
 	);
 };
 
