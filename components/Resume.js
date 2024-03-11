@@ -2,7 +2,7 @@
 import { BsArrowRight } from 'react-icons/bs';
 
 const RESUME_LINK =
-	'https://drive.google.com/file/d/1sHc7mFymMv_M5f1-OJ1NYy14G0OHwoA3/view?usp=sharing';
+	'https://drive.google.com/file/d/1gJ4k0S8r0Xcgn_921Kmz-gWtX_pCrsOS/view?usp=sharing';
 
 const Resume = () => {
 	return (
