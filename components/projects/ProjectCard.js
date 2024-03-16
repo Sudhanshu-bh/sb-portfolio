@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const ProjectCard = ({ path, title, desc, link }) => {

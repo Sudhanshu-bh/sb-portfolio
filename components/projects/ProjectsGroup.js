@@ -6,7 +6,7 @@ const workSlides = {
 				{
 					title: 'Amazon clone',
 					desc: 'Full e-commerce website',
-					path: '/m-thumb1.jpg',
+					path: '/thumb_fsam.jpg',
 					link: {
 						github: 'https://github.com/Sudhanshu-bh/fs-amazon-clone',
 						live: 'https://fs--clone.web.app/',
@@ -15,7 +15,7 @@ const workSlides = {
 				{
 					title: 'Shortly',
 					desc: 'A url-shortner with clean design',
-					path: '/thumb4.jpg',
+					path: '/thumb_shortly.jpg',
 					link: {
 						github: 'https://github.com/Sudhanshu-bh/shortly',
 						live: 'https://ushortly.netlify.app/',
@@ -24,7 +24,7 @@ const workSlides = {
 				{
 					title: 'Worldpedia',
 					desc: "a country's list",
-					path: '/thumb3.jpg',
+					path: '/thumb_worldpedia.jpg',
 					link: {
 						github: 'https://github.com/Sudhanshu-bh/worldpediasb',
 						live: 'https://worldpediasb.netlify.app/',
@@ -33,7 +33,7 @@ const workSlides = {
 				{
 					title: 'Heyalien',
 					desc: 'my other portfolio',
-					path: '/thumb4.jpg',
+					path: '/thumb_portfolio.jpg',
 					link: {
 						github: 'https://github.com/Sudhanshu-bh/portfolio',
 						live: 'https://heyalien.web.app/',
