@@ -7,7 +7,7 @@ const experience = [
 	{
 		title: 'Senior Engineer - Motherson Technology Services',
 		stage: 'May 2024 - Present',
-		projects: 'Sinec AMS, Sinec NMS',
+		projects: 'Unibuild, Abani',
 	},
 	{
 		title: 'Software Engineer - Siemens',
