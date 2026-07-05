@@ -30,6 +30,3 @@ My personal portfolio website showcasing my experience, skills, projects, and jo
 
 * LinkedIn: https://linkedin.com/in/sudhanshu-bh
 * Email: [bsudhanshu3@gmail.com](mailto:bsudhanshu3@gmail.com)
-
-
-⭐ If you found this project interesting, consider giving it a star!
