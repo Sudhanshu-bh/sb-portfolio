@@ -26,7 +26,7 @@ const aboutSections = [
 	},
 ];
 
-const NoOfProjects = 3;
+const NoOfProjects = 5;
 
 const About = () => {
 	const [index, setIndex] = useState(0);
