@@ -5,8 +5,13 @@ import { motion } from 'framer-motion';
 
 const experience = [
 	{
+		title: 'Senior Engineer - Motherson Technology Services',
+		stage: 'May 2024 - Present',
+		projects: 'Sinec AMS, Sinec NMS',
+	},
+	{
 		title: 'Software Engineer - Siemens',
-		stage: 'Feb 2022 - Present',
+		stage: 'Feb 2022 - Apr 2024',
 		projects: 'Sinec AMS, Sinec NMS',
 	},
 	{
